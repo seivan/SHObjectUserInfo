@@ -4,19 +4,16 @@ Pod::Spec.new do |s|
   git_url = "#{url}.git"
   s.name         = name
   s.version      = "1.0.0"
-  s.summary      = "Segue Blocks and userInfo without swizzling."
+  s.summary      = "NSObject prefixed userInfo without swizzling."
   s.description  = <<-DESC
-                    Do segueus with blocks without any swizzling or leaks.
-                    Blocks are hold with a weak reference so you don't have to cleanup when your vc is gone.
-                    Also implements userInfo mutableDictionary on UIViewController
+                    SHObjectUserInfo is a category on top of NSObject to allow userInfo dictionary without the bullshit of swizzling and other disgusting hacks. It's built on top of NSMapTable that works with weakToWeak references between an object and its userInfo. 
+
   
-                    * No need to clean up after - Blocks are self maintained.
-                    * Handles uninemplemented unwind segues
+                    * No need to clean up after - userInfo are self maintained.
                     * Weak referenced blocks.
                     * No swizzling or hacks. 
                     * Name-scoped selectors.
-                    * Implements userInfo without a bullshit hack.
-                    * Works with existing codebase that uses old fashioned segues. 
+                    * Works with existing codebase that uses userInfo dictionaries on them. 
 
                    DESC
   s.homepage     = url

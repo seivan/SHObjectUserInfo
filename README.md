@@ -27,7 +27,7 @@ pod 'SHObjectUserInfo'
 Setup
 -----
 
-Put this either in specific objects or your project prefix file
+Put this either in specific classes or your project prefix file
 
 ```objective-c
 #import 'NSObject+SHObjectUserInfo.h'

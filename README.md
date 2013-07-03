@@ -4,7 +4,7 @@ SHObjectUserInfo
 Overview
 --------
 
-SHObjectUserInfo is a category on top of NSObject to allow userInfo dictionary without the bullshit of swizzling and other disgusting hacks. It's built on top of NSMapTable that works with weakToStrong references between an object and its userInfo. 
+SHObjectUserInfo is a category on top of NSObject to allow userInfo dictionary without swizzling. It's built on top of NSMapTable that works with weakToStrong references between an object and its userInfo. 
 
 
 Swizzle & Junk free 

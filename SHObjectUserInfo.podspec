@@ -24,6 +24,7 @@ Pod::Spec.new do |s|
   
 
   s.platform  = :ios, "6.0"
+  s.platform  = :osx, "10.8"
 
   s.source_files = "#{name}/**/*.{h,m}"
   s.requires_arc = true

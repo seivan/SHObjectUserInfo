@@ -30,13 +30,13 @@ Setup
 Put this either in specific classes or your project prefix file
 
 ```objective-c
-#import 'NSObject+SHObjectUserInfo.h'
+#import "NSObject+SHObjectUserInfo.h"
 ```
 
 or
 
 ```objective-c
-#import 'SHObjectUserInfo.h'
+#import "SHObjectUserInfo.h"
 ```
 
 Usage

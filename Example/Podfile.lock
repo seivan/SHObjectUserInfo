@@ -1,5 +1,5 @@
 PODS:
-  - SHObjectUserInfo (1.0.0)
+  - SHObjectUserInfo (1.0.2)
 
 DEPENDENCIES:
   - SHObjectUserInfo (from `../`)
@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  SHObjectUserInfo: bbe5488c01fc0de9127efd8492bdc99a36e12677
+  SHObjectUserInfo: ec3758f8c54560b771d86ae173607e84cc5cda11
 
-COCOAPODS: 0.19.1
+COCOAPODS: 0.22.3

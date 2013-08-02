@@ -1,33 +1,34 @@
 Pod::Spec.new do |s|
-  name    = "SHObjectUserInfo"
-  url     = "https://github.com/seivan/#{name}"
-  git_url = "#{url}.git"
+  name           = "SHObjectUserInfo"
+  url            = "https://github.com/seivan/#{name}"
+  git_url        = "#{url}.git"
+  version        = "1.0.2"
+  source_files   = "#{name}/**/*.{h,m}"
+
   s.name         = name
-  s.version      = "1.0.0"
-  s.summary      = "Segue Blocks and userInfo without swizzling."
+  s.version      = version
+  s.summary      = "NSObject prefixed userInfo without swizzling."
   s.description  = <<-DESC
-                    Do segueus with blocks without any swizzling or leaks.
-                    Blocks are hold with a weak reference so you don't have to cleanup when your vc is gone.
-                    Also implements userInfo mutableDictionary on UIViewController
-  
-                    * No need to clean up after - Blocks are self maintained.
-                    * Handles uninemplemented unwind segues
+                    SHObjectUserInfo is a category on top of NSObject to allow userInfo dictionary without the swizzling. It's built on top of NSMapTable that works with weakToWeak references between an object and its userInfo.
+
+
+                    * No need to clean up after - userInfo are self maintained.
                     * Weak referenced blocks.
-                    * No swizzling or hacks. 
+                    * No swizzling or hacks.
                     * Name-scoped selectors.
-                    * Implements userInfo without a bullshit hack.
-                    * Works with existing codebase that uses old fashioned segues. 
+                    * Works with existing codebase that uses userInfo dictionaries on them.
 
                    DESC
   s.homepage     = url
-  s.license      = {:type => 'MIT' } 
+  s.license      = {:type => 'MIT' }
   s.author       = { "Seivan Heidari" => "seivan.heidari@icloud.com" }
-  
-  s.source       = { :git => git_url, :tag => s.version.to_s }
-  
 
-  s.platform  = :ios, "6.0"
+  s.source       = { :git => git_url, :tag => version }
 
-  s.source_files = "#{name}/**/*.{h,m}"
+
+  s.ios.deployment_target = "6.0"
+  s.osx.deployment_target = "10.8"
+
+  s.source_files = source_files
   s.requires_arc = true
 end

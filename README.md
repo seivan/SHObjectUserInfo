@@ -1,6 +1,8 @@
 SHObjectUserInfo
 ==========
 [![Build Status](https://travis-ci.org/seivan/SHObjectUserInfo.png?branch=master)](https://travis-ci.org/seivan/SHObjectUserInfo)
+[![Version](http://cocoapod-badges.herokuapp.com/v/SHObjectUserInfo/badge.png)](http://cocoadocs.org/docsets/SHObjectUserInfo)
+[![Platform](http://cocoapod-badges.herokuapp.com/p/SHObjectUserInfo/badge.png)](http://cocoadocs.org/docsets/SHObjectUserInfo)
 
 Overview
 --------

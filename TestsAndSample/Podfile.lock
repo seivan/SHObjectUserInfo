@@ -1,0 +1,19 @@
+PODS:
+  - SHObjectUserInfo (1.1.0)
+  - SHTestCaseAdditions (1.4.1):
+    - SHTestCaseAdditions/XCTest
+  - SHTestCaseAdditions/XCTest (1.4.1)
+
+DEPENDENCIES:
+  - SHObjectUserInfo (from `../`)
+  - SHTestCaseAdditions
+
+EXTERNAL SOURCES:
+  SHObjectUserInfo:
+    :path: ../
+
+SPEC CHECKSUMS:
+  SHObjectUserInfo: 3dfe4af11a45c985088f613813705b8ebd3cc718
+  SHTestCaseAdditions: ff32e10731f37effd08c254e538c3e7998f74921
+
+COCOAPODS: 0.28.0

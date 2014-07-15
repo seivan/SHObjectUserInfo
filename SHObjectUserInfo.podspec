@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   name           = "SHObjectUserInfo"
   url            = "https://github.com/seivan/#{name}"
   git_url        = "#{url}.git"
-  version        = "1.2.1"
+  version        = "1.2.2"
   source_files   = "#{name}/**/*.{h,m}"
 
   s.name         = name
